@@ -1,0 +1,65 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Oregon State University.
+    url: "https://stat.oregonstate.edu/"
+    location: Corvallis, Oregon
+    # company overview
+    overview: Oregon State University is a public land-grant research university in Corvallis, Oregon. The university currently offers more than 200 undergraduate-degree programs along with a variety of graduate and doctoral degrees. 
+  positions:
+  - designation: Graduate Teaching Assistant
+    start: Sep 2020
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Assisted, an undergraduate course averaging 60 students per term 
+    - Taught methods of obtaining and statistically sound evidence to answer questions of research
+    - Developed quizzes, labs and homework
+
+  - designation: Statistical Consultant
+    start: Jan 2019
+    end: Mar 2019
+    responsibilities:
+    - Consulted on experimental design and statistics with current research at Oregon State in the Department of Agriculture and Social Sciences 
+    - Tasked to determine the appropriate statistical tool to use in data analyses for time-series and longitudinal data analyses 
+    - Summarizes and clearly communicates statistical findings to non-statistician applied scientists 
+
+    
+- company:
+    name: The Old Spaghetti Factory.
+    url: "https://www.osf.com/"
+    location: Corvallis, OR
+    overview: OSF served as a gateway experience to enter into the Graduate program at Oregon State.
+  positions:
+  - designation: Data Consultant
+    start: Sep 2016
+    end: Oct 2020
+    responsibilities:
+    - Performed data analyses of server check averages
+    - Providing managers valuable data-driven insight for increasing weekly sales by over $300,000 dollars per year for each store. 
+    - Redesigned company’s national training methods for new employees based on improvements found in said analysis
+    - Created a mobile app in OpenasApp and Excel to calculate maximum profit for server’s income for new servers. 
+- company:
+    name: Independent Consulting.
+    url: "https://www.mywebsite.com"
+    location: Corvallis, OR
+    overview: A history of relavant consulting jobs for local companies.
+  positions:
+  - designation: Independent Consultant
+    start: Sep 2016
+    end: Present
+    responsibilities:
+    - Consultant to 
+    - Count more interns.
+    - Count me as an intern.
