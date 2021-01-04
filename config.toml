@@ -1,5 +1,5 @@
 theme = "toha"
-baseURL = "https://github.com/statistical-lusardi/actual_website"
+baseURL = "https://eager-swirles-c92696.netlify.app/"
 languageCode = "en-us"
 title = "Statistical Lusardi's Homepage"
 
