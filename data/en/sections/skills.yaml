@@ -11,39 +11,34 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  icon: "/images/sections/skills/kubernetes.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
+- name: R
+  icon: "/images/sections/skills/R.png"
+  summary: "3 years of experience applying statistical methods to organize, analyze, and interpret data"
+  url: "https://www.r-project.org/"
 
-- name: Go Development
-  icon: "/images/sections/skills/go.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
+- name: Teaching
+  icon: "/images/sections/skills/beaver.png"
+  summary: "Experience teaching multiple undergraduate classes in statistical methods while pursuing M.S. in Statistics."
+  url: "https://stat.oregonstate.edu/people"
 
-- name: Cloud Computing
-  icon: "/images/sections/skills/cloud.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-
-- name: Docker
-  icon: "/images/sections/skills/docker.svg"
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  url: "https://www.docker.com/"
-
-- name: Prometheus
-  icon: "/images/sections/skills/prometheus.png"
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  url: "https://prometheus.io/"
 
 - name: Power BI
   icon: "/images/sections/skills/powerbi.png"
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
+  summary: "Manage, monitor and improve integrated guest monitoring visualizations and dashboard environments including ongoing changes"
+  url: "https://app.powerbi.com/view?r=eyJrIjoiNjI2NDI5ZWQtY2RlMC00ZGFjLWE1N2QtMTYxYWVkOTQyZjc5IiwidCI6ImNlNmQwNWUxLTNjNWUtNGQ2Mi04N2E4LTRjNGEyNzEzYzExMyIsImMiOjZ9&pageName=ReportSectionff2514f78c9f7317f259"
 
 - name: Git
   icon: "/images/sections/skills/git.png"
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  url: "https://git-scm.com/"
+  summary: "Experienced with website development, version control, and multiple team-based projects"
+  url: "https://github.com/statistical-lusardi"
 
-- name: R
-  icon: "/images/sections/skills/R.png"
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
+- name: Hugo Website Development
+  icon: "/images/sections/skills/hugo.png"
+  summary: "Capable of writing scalable, testable, and maintainable program."
+  url: "https://golang.org/"
+
+
+- name: Cloud Computing
+  icon: "/images/sections/skills/cloud.png"
+  summary: "Works with most of the major clouds such as Watson Studio, Azure etc."
+
