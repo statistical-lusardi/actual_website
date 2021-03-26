@@ -1,49 +1,68 @@
 ---
-title: "Hello R Markdown"
-author: "Frida Gomam"
-date: 2015-07-23T21:13:14-05:00
+title: "The Power of Statistics in Genomics"
+author: "Anthony Lusardi"
+date: 2021-03-26T21:13:14-05:00
+hero: /images/posts/Genomics/DNA.jpg
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
+
 ---
 
 
 
-<div id="r-markdown" class="section level1">
-<h1>R Markdown</h1>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932</code></pre>
+<p>If genetics is not in your field of experience, as a newcomer it feels a lot like being given a jigsaw puzzle with exactly 2,697,890,418 pieces with no reference picture. Your task is to find out how to put it together exactly. But it doesn’t stop there - Let’s say you want to find 5 pieces that have the same pattern in a different puzzle and that 2-billion-piece puzzle is partially put together in fragments. How do we even start? Herein lies the challenge of genetic research and the powerful use of statistics.</p>
+<p>This term as a first-year graduate student in Statistics at Oregon State, I had the opportunity to work alongside some of OSU’s novel research on plant genetics. Over the course of three months, my classmates and I worked hard on formulating scientific questions in genomics research and translating them into statistical problems. Along the way, we got to as an interdisciplinary team on current research projects.</p>
+<div id="finding-the-edge-pieces-phased-based-sequencing" class="section level2">
+<h2>Finding the Edge Pieces: Phased-Based Sequencing</h2>
+<p>The project we had the opportunity to work on was to use phased based sequencing to reconstruct a haplotype. Why would this be important? In genetics we can use sequencing to identify a particular location of a gene of interest to further promote said traits. In our case we were looking for these genes in hazelnut DNA that are disease resistant.
+Haplotype phasing is an attempt to refine a genome by identifying where the alternative form of a gene, known as an allele, is located on one of the two inherited parental chromosomes. thus, we have information for both chromosomes of a chromosome pair.</p>
+<div id="finding-similar-jigsaw-pieces--dna-reads" class="section level4">
+<h4>Finding similar jigsaw pieces- DNA Reads</h4>
+<p>Remember from our old Biology courses the AGTC pairs? Well, if we move this into sequencing, this information is very useful for reconstructing the haplotypes! Formally, the Heterozygous assumption states that for all base pairs, there is a complement to them that is one of 4 choices AGTC. With this information, now all we must do is solve each of the compliments to these fragments and compile them together in a reconstructed haplotype. This is the first part of sequencing.
+These fragments are also known as reads, which are inferred sequence of base pairs (or base pair probabilities) corresponding to all or part of a single DNA fragment. The way that these reads are put together are much like layers of thin paper that reveal a significant pattern such as below.</p>
+<div class="figure">
+<img src="C:/Users/USER/Documents/actual_website/static/images/posts/Genomics/fig1.jpg" alt="" />
+<p class="caption">an image caption Source: Figure 1.</p>
 </div>
-<div id="including-plots" class="section level1">
-<h1>Including Plots</h1>
-<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
-<pre class="r"><code>par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
-  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
-  init.angle = -50, border = NA
-)</code></pre>
-<div class="figure"><span id="fig:pie"></span>
-<img src="index_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
-<p class="caption">
-Figure 1: A fancy pie chart.
-</p>
+<p>In this figure we see that there are overlapped grey blocks of reads that are aligned overtop each other at certain points. The amount of overlap is referred to as the depth. Stronger depth can reveal the true sequencing for the complete haplotype block, and we are one step closer towards revealing a more complete picture. Puzzle solved right?-Well not exactly.</p>
+<p>Reads alone cannot put together the puzzle completely.They are just small tidbits of information that give us fragmented pieces of a reconstructed puzzle- which may or may not be accurate. Several software tools have been developed and improved upon throughout the past 31 years to try and reconstruct these pieces. The approaches include statistical modeling to determine the probability of a specific haplotype phasing result, as well as computational methods that rely on rule-based methods. However, when trying to reconstruct millions of reads, some of them are incomplete, damaged, duplicates or even read incorrectly by sequencing machines.</p>
+<p>The reconstruction of this haplotype presents itself a very difficult problem computationally. So how do we know where the blocks go to construct the puzzle? Let’s present the problem in terms of statistics first!</p>
 </div>
+<div id="translation-into-statistics--the-weighted-minimum-error-correction-problem-wmec" class="section level4">
+<h4>Translation into statistics- The Weighted Minimum Error Correction Problem (wMEC)</h4>
+<p>Let’s consider the input matrix F Each row corresponds to the reads and columns corresponds to a SNP position(indicated in the figure as Variants). Below we can see a graphical representation of the input matrix F</p>
+<div class="figure">
+<img src="C:/Users/USER/Documents/actual_website/static/images/posts/Genomics/fig2.jpg" alt="" />
+<p class="caption">an image caption Source: Figure 2.</p>
+</div>
+<p>Each entry in this matrix F(i‚ j) {0,1, - } is associated with a confidence degree w(i, j) telling how likely it is that F(i‚ j) is correctly sequenced and that its fragment i is correctly mapped to location j.
+The goal of Minimum Error Correction is to make F conflict free by flipping a minimum number of entries of F from 0 to 1 or vice versa. The weighted variant of Weighted Minimum Error Correction denoted wMEC, has an additional weight function w as input. This weight function assigns a non-negative weight w(i, j) to each entry F(i‚ j) of F. This weight can reflect the relative confidence that the entry is correctly sequenced.</p>
+<p>We use such values as a weight for the correction that we need to minimize in the wMEC model. When these weights are log-likelihoods, summing them corresponds to multiplying probabilities, thus finding a minimum weight solution that corresponds to finding a maximum likelihood bipartition of the reads/nucleotide fragments.</p>
+</div>
+<div id="whatshap-weighted-haplotype-assembly-for-future-generation-sequencing-reads-patterson-et-al.-2015" class="section level4">
+<h4><em>WhatsHap: Weighted Haplotype Assembly for Future-Generation Sequencing Reads-(Patterson et al., 2015)</em></h4>
+<p>In order to solve this matrix F (Input allele matrix) we use one of the most utilized read-based phasing tools WhatsHap. This tool focuses on solving the weighted minimum error correction problem. It can identify multiple types of genetic markers, including SNVs (single nucleotide variants) and INDELs (insertions/deletions), and is capable of phasing long, error-prone sequence reads.</p>
+<p>WhatsHap was evaluated against three other common phasing tools to determine its comparative phasing accuracy and phasing completeness. This evaluation indicated that WhatsHap reduced switch error rate, produced phasing completeness that is close to the theoretical optimum, and was the most capable.
+<img src="C:/Users/USER/Documents/actual_website/static/images/posts/Genomics/fig3.jpg" alt="an image caption Source: Figure 3." /></p>
+<p><em>Image taken from (Martin et al., 2016) Figure 2: Left: The allele matrix encodes, for each read, whether it supports the reference (0) or alternative allele (1) at all covered variant positions. Read 1 is a paired-end read. Right: In this example, the solution to the wMEC problem is to flip the single marked entry at Read 3, Variant 2 at a cost of 3. This partitions the set of reads into two conflict-free (internally consistent) sets representing the haplotypes, here color-coded green/purple</em></p>
+</div>
+<div id="solving-the-puzzle" class="section level3">
+<h3>Solving the Puzzle</h3>
+<p>Proceeding column-wise from SNP position 1 to m (Figure 2), our approach computes a dynamic programming table column C(j,.) for each j is an element of {1…m}. We say that a bipartition B’= (R’, S’’) of all fragments F extends bipartition B = (R, S) of F(j), if R is a subset of R’ and S is a subset of S’. We define B(X) to be the set of all bipartitions of X. Given a bipartition (R, S), we denote B(X|(R‚ S)) the set of all bipartitions of X that extend (R, S), that is, B(X|(R’‚ S’))={(R’‚ S’) is an element of B(X)|R is a subset of R’ and S is a subset of S’}
+The basic idea of our dynamic program is as follows: for every bipartition B = (R, S) of F(j), entry C(j, B) gives the minimum cost of a bipartition of all fragments F that renders positions 1‚ . . . ‚ j conflict free and that extends B. By definition of C(j, B), the cost of an optimal solution to the wMEC problem then equals min B sub (is an element of F(m) C(m‚ B). An optimal bipartition of the fragments can be obtained by backtracking along the columns of the DP table up to the first SNP position in F.</p>
+<p>Whatshap dynamic programming (DP) formulation is based on the observation that, for each column, only active fragments need to be considered; a fragment i is said to be active in every column j that lies in between its leftmost nonhole entry and its rightmost nonhole entry. Paired-end reads remain active in the ‘‘internal segment’’ between the two reads. Let F(j) be the set of fragments that are active at SNP position j and let F be the set of all fragments. The aim was to find a bipartition (R<em>, S</em>) of F such that the changes in R* and S* to make F conflict-free have minimum total weight</p>
+<div class="figure">
+<img src="C:/Users/USER/Documents/actual_website/static/images/posts/Genomics/fig4.jpg" alt="" />
+<p class="caption">an image caption Source: Figure 4.</p>
+</div>
+<div id="further-sequencing" class="section level4">
+<h4>Further Sequencing</h4>
+<p>So how well does Whatshap perform? Compared to other applications we have seen promising performance from Whatshap that yields provably optimal solutions to the weighted minimum error correction problem in runtime linear in the number of SNPs. WhatsHap could handle datasets of coverage up to 20x, and that 15x are generally enough for reliably phasing long reads, even at significantly elevated sequencing error rates. We also find that the switch and flip error rates of the haplotypes we output are favorable when comparing them with state-of-the-art statistical phasers.</p>
+</div>
+</div>
+</div>
+<div id="the-puzzle-continues." class="section level2">
+<h2>The puzzle continues.</h2>
+<p>As one could imagine, combining statistics and genetics is one of the most daunting mathematical challenges. There were certain tools over the course of the term we got to use such as clustering algorithms, Dimension reduction, Self-Organizing maps, and many other Machine learning tools to solve real genetic problems. But when considering a problem this large- one needs to constantly think outside the box. This approach is meant to motivate others to pursue the great field of genetics and continue to discover improved ways to improve our research in genetics and statistics.
+I wanted to thank my teammates Samuel Talbot and Hayley Park for giving me a crash course in Genetics over the course of this term and for being awesome teammates. Thanks to them I got to explore this field of genetic research. I also want to thank Yuan Jiang for teaching a great course of Statistical Methods for Genomics Research this term.</p>
 </div>
