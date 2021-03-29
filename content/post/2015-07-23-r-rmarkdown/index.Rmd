@@ -1,11 +1,13 @@
 ---
 title: "The Power of Statistics in Genomics"
 author: "Anthony Lusardi"
-date: 2021-03-26T21:13:14-05:00
+date: '2021-03-26T21:13:14-05:00'
 hero: /images/posts/Genomics/DNA.jpg
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
-
+categories: R
+tags:
+- R Markdown
+- plot
+- regression
 ---
 
 
@@ -22,7 +24,7 @@ Haplotype phasing is an attempt to refine a genome by identifying where the alte
 Remember from our old Biology courses the AGTC pairs? Well, if we move this into sequencing, this information is very useful for reconstructing the haplotypes! Formally, the Heterozygous assumption states that for all base pairs, there is a complement to them that is one of 4 choices AGTC. With this information, now all we must do is solve each of the compliments to these fragments and compile them together in a reconstructed haplotype.  This is the first part of sequencing. 
 These fragments are also known as reads, which are inferred sequence of base pairs (or base pair probabilities) corresponding to all or part of a single DNA fragment. The way that these reads are put together are much like layers of thin paper that reveal a significant pattern such as below. 
 
-![an image caption Source: Figure 1.](C:/Users/USER/Documents/actual_website/static/images/posts/Genomics/fig1.jpg)
+![an image caption Source: Figure 1.](C:\Users\USER\Documents\actual_website\content\post\2015-07-23-r-rmarkdown\index_files\figure-html\fig1.png)
 
 In this figure we see that there are overlapped grey blocks of reads that are aligned overtop each other at certain points. The amount of overlap is referred to as the depth. Stronger depth can reveal the true sequencing for the complete haplotype block, and we are one step closer towards revealing a more complete picture. Puzzle solved right?-Well not exactly.
 
@@ -46,6 +48,7 @@ We use such values as a weight for the correction that we need to minimize in th
 In order to solve this matrix F (Input allele matrix) we use one of the most utilized read-based phasing tools WhatsHap. This tool focuses on solving the weighted minimum error correction problem. It can identify multiple types of genetic markers, including SNVs (single nucleotide variants) and INDELs (insertions/deletions), and is capable of phasing long, error-prone sequence reads.
 
  WhatsHap was evaluated against three other common phasing tools to determine its comparative phasing accuracy and phasing completeness. This evaluation indicated that WhatsHap reduced switch error rate, produced phasing completeness that is close to the theoretical optimum, and was the most capable.
+ 
  ![an image caption Source: Figure 3.](C:/Users/USER/Documents/actual_website/static/images/posts/Genomics/fig3.jpg)
 
  
@@ -66,4 +69,14 @@ So how well does Whatshap perform? Compared to other applications we have seen p
 ## The puzzle continues.
 As one could imagine, combining statistics and genetics is one of the most daunting mathematical challenges. There were certain tools over the course of the term we got to use such as clustering algorithms, Dimension reduction, Self-Organizing maps, and many other Machine learning tools to solve real genetic problems. But when considering a problem this large- one needs to constantly think outside the box. This approach is meant to motivate others to pursue the great field of genetics and continue to discover improved ways to improve our research in genetics and statistics. 
 I wanted to thank my teammates Samuel Talbot and Hayley Park for giving me a crash course in Genetics over the course of this term and for being awesome teammates. Thanks to them I got to explore this field of genetic research. I also want to thank Yuan Jiang for teaching a great course of Statistical Methods for Genomics Research this term. 
+
+#### References
+
+
+Martin, M., Patterson, M., Garg, S., O Fischer, S., Pisanti, N., Klau, G. W., Schöenhuth, A., & Marschall, T. (2016). WhatsHap: Fast and accurate read-based phasing [Preprint]. Bioinformatics. https://doi.org/10.1101/085050
+
+Patterson, M., Marschall, T., Pisanti, N., van Iersel, L., Stougie, L., Klau, G. W., & Schönhuth, A. (2015). WhatsHap: Weighted Haplotype Assembly for Future-Generation Sequencing Reads. Journal of Computational Biology, 22(6), 498–509. https://doi.org/10.1089/cmb.2014.0157
+
+
+
 

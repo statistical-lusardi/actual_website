@@ -1,11 +1,13 @@
 ---
 title: "The Power of Statistics in Genomics"
 author: "Anthony Lusardi"
-date: 2021-03-26T21:13:14-05:00
+date: '2021-03-26T21:13:14-05:00'
 hero: /images/posts/Genomics/DNA.jpg
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
-
+categories: R
+tags:
+- R Markdown
+- plot
+- regression
 ---
 
 
@@ -42,8 +44,11 @@ The goal of Minimum Error Correction is to make F conflict free by flipping a mi
 <div id="whatshap-weighted-haplotype-assembly-for-future-generation-sequencing-reads-patterson-et-al.-2015" class="section level4">
 <h4><em>WhatsHap: Weighted Haplotype Assembly for Future-Generation Sequencing Reads-(Patterson et al., 2015)</em></h4>
 <p>In order to solve this matrix F (Input allele matrix) we use one of the most utilized read-based phasing tools WhatsHap. This tool focuses on solving the weighted minimum error correction problem. It can identify multiple types of genetic markers, including SNVs (single nucleotide variants) and INDELs (insertions/deletions), and is capable of phasing long, error-prone sequence reads.</p>
-<p>WhatsHap was evaluated against three other common phasing tools to determine its comparative phasing accuracy and phasing completeness. This evaluation indicated that WhatsHap reduced switch error rate, produced phasing completeness that is close to the theoretical optimum, and was the most capable.
-<img src="C:/Users/USER/Documents/actual_website/static/images/posts/Genomics/fig3.jpg" alt="an image caption Source: Figure 3." /></p>
+<p>WhatsHap was evaluated against three other common phasing tools to determine its comparative phasing accuracy and phasing completeness. This evaluation indicated that WhatsHap reduced switch error rate, produced phasing completeness that is close to the theoretical optimum, and was the most capable.</p>
+<div class="figure">
+<img src="C:/Users/USER/Documents/actual_website/static/images/posts/Genomics/fig3.jpg" alt="" />
+<p class="caption">an image caption Source: Figure 3.</p>
+</div>
 <p><em>Image taken from (Martin et al., 2016) Figure 2: Left: The allele matrix encodes, for each read, whether it supports the reference (0) or alternative allele (1) at all covered variant positions. Read 1 is a paired-end read. Right: In this example, the solution to the wMEC problem is to flip the single marked entry at Read 3, Variant 2 at a cost of 3. This partitions the set of reads into two conflict-free (internally consistent) sets representing the haplotypes, here color-coded green/purple</em></p>
 </div>
 <div id="solving-the-puzzle" class="section level3">
