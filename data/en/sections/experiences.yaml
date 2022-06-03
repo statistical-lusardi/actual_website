@@ -10,6 +10,21 @@ section:
 
 # Your experiences
 experiences:
+
+- company:
+    name: Independent Consulting.
+    url: "https://www.statisticallusardi.com"
+    location: Corvallis, OR
+    overview: A history of relavant consulting jobs for local companies.
+  positions:
+  - designation: Independent Consultant
+    start: Sep 2016
+    end: Present
+    Past Consulting Contracts:
+    - L & M Industrial Fabrication - Aided to optimize trucking costs for deliveries
+    - Maddox Transformers - Created a pricing tool utilizing historical data to optimize online product price setting
+    - Agronomic Research OSU - Aided with statistical interpretation of results and significance for fungicide reserach on hazelnut trees
+
 - company:
     name: Bonneville Power Administration.
     url: "https://www.bpa.gov/"
@@ -23,18 +38,11 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Assisted, an undergraduate course averaging 60 students per term 
-    - Taught methods of obtaining and statistically sound evidence to answer questions of research
-    - Developed quizzes, labs and homework
-
-  - designation: Statistical Consultant
-    start: Jan 2019
-    end: Mar 2019
-    responsibilities:
     - Produce and Maintain Valuation of projects present findings to stakeholders
-    - Build and Maintain Shiny Dashboard report to summarize weekly operations 
-    - Construct modelling techniques to optimize hydro operations for Banks Lake
-
+    - Build and Maintain Shiny Dashboard report to summarize weekly operations
+    - Construct modelling techniques to optimize hydro operations for the Federal Columbia River Basin System
+    - company:
+    
 - company:
     name: Oregon State University.
     url: "https://stat.oregonstate.edu/"
@@ -75,15 +83,3 @@ experiences:
     - Providing managers valuable data-driven insight for increasing weekly sales by over $300,000 dollars per year for each store. 
     - Redesigned company’s national training methods for new employees based on improvements found in said analysis
     - Created a mobile app in OpenasApp and Excel to calculate maximum profit for server’s income for new servers. 
-- company:
-    name: Independent Consulting.
-    url: "https://www.statisticallusardi.com"
-    location: Corvallis, OR
-    overview: A history of relavant consulting jobs for local companies.
-  positions:
-  - designation: Independent Consultant
-    start: Sep 2016
-    end: Present
-    responsibilities:
-    - L & M Industrial Fabrication - Aided to optimize trucking costs for deliveries
-  

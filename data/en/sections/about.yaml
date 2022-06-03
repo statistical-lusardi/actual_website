@@ -8,17 +8,17 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Graduate Student M.S. Statistics
+designation: Grid Modernization Research Analyst M.S. Statistics
 # your company information
 company:
-  name: Oregon State University
-  url: "https://stat.oregonstate.edu/"
+  name: Bonneville Power Administration
+  url: "https://www.bpa.gov/"
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/resume_OSU_grad.pdf"
 
 # a summary about you
-summary: 'I am a Data Scientist and Statistician currentl with 6 years of working experience buidling data solutions for the various industries. I currently work in Renewable Energy with Bonneville Power Administration as an Operations Resarch Analyst in renewable energy.I have had experience working with various projects feel free to look at them! '
+summary: 'I am an Operations Research Analyst with 6 years of working experience buidling data solutions for various industries. I currently work in Renewable Energy with Bonneville Power Administration as an Operations Resarch Analyst in renewable energy and grid modernization.I have had experience working with various projects across various industries and some just for fun. Feel free to look at them!'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -47,7 +47,7 @@ socialLinks:
 # give the percentage between 50 to 100 with 5 intervals.
 # currently supported colors: blue, yellow, pink, green, sky, orange
 softSkills:
-- name: Leadership
+- name: Problem Solving
   percentage: 85
   color: blue
 - name: Team Work
@@ -62,7 +62,7 @@ softSkills:
 - name: Fast Learner
   percentage: 85
   color: sky
-- name: Problem Solving
+- name: Leadership
   percentage: 85
   color: orange
 # you can also provide color code instead of pre-defined color name
