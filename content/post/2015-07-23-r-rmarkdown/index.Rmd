@@ -24,7 +24,7 @@ Haplotype phasing is an attempt to refine a genome by identifying where the alte
 Remember from our old Biology courses the AGTC pairs? Well, if we move this into sequencing, this information is very useful for reconstructing the haplotypes! Formally, the Heterozygous assumption states that for all base pairs, there is a complement to them that is one of 4 choices AGTC. With this information, now all we must do is solve each of the compliments to these fragments and compile them together in a reconstructed haplotype.  This is the first part of sequencing. 
 These fragments are also known as reads, which are inferred sequence of base pairs (or base pair probabilities) corresponding to all or part of a single DNA fragment. The way that these reads are put together are much like layers of thin paper that reveal a significant pattern such as below. 
 
-![an image caption Source: Figure 1.](static/images/posts/Genomics/fig1.png)
+![an image caption Source: Figure 1.](C:/Users/antho/Documents/personal_website/static/images/posts/Genomics/fig1.jpg)
 
 In this figure we see that there are overlapped grey blocks of reads that are aligned overtop each other at certain points. The amount of overlap is referred to as the depth. Stronger depth can reveal the true sequencing for the complete haplotype block, and we are one step closer towards revealing a more complete picture. Puzzle solved right?-Well not exactly.
 
@@ -36,7 +36,7 @@ The reconstruction of this haplotype presents itself a very difficult problem co
 
 Let’s consider the input matrix F Each row corresponds to the reads and columns corresponds to a SNP position(indicated in the figure as Variants).  Below we can see a graphical representation of the input matrix F
 
-![an image caption Source: Figure 2.](static/images/posts/Genomics/fig2.jpg)
+![an image caption Source: Figure 2.](C:/Users/antho/Documents/personal_website/static/images/posts/Genomics/fig2.jpg)
 
 Each entry in this matrix F(i‚ j) {0,1, - } is associated with a confidence degree w(i, j) telling how likely it is that F(i‚ j) is correctly sequenced and that its fragment i is correctly mapped to location j. 
 The goal of Minimum Error Correction is to make F conflict free by flipping a minimum number of entries of F from 0 to 1 or vice versa. The weighted variant of Weighted Minimum Error Correction denoted wMEC, has an additional weight function w as input. This weight function assigns a non-negative weight w(i, j) to each entry F(i‚ j) of F. This weight can reflect the relative confidence that the entry is correctly sequenced.
@@ -49,7 +49,7 @@ In order to solve this matrix F (Input allele matrix) we use one of the most uti
 
  WhatsHap was evaluated against three other common phasing tools to determine its comparative phasing accuracy and phasing completeness. This evaluation indicated that WhatsHap reduced switch error rate, produced phasing completeness that is close to the theoretical optimum, and was the most capable.
  
- ![an image caption Source: Figure 3.](static/images/posts/Genomics/fig3.jpg)
+ ![an image caption Source: Figure 3.](C:/Users/antho/Documents/personal_website/static/images/posts/Genomics/fig3.jpg)
 
  
 *Image taken from (Martin et al., 2016) Figure 2: Left: The allele matrix encodes, for each read, whether it supports the reference (0) or alternative allele (1) at all covered variant positions. Read 1 is a paired-end read. Right: In this example, the solution to the wMEC problem is to flip the single marked entry at Read 3, Variant 2 at a cost of 3. This partitions the set of reads into two conflict-free (internally consistent) sets representing the haplotypes, here color-coded green/purple*
@@ -61,7 +61,7 @@ The basic idea of our dynamic program is as follows: for every bipartition B = (
 
 Whatshap dynamic programming (DP) formulation is based on the observation that, for each column, only active fragments need to be considered; a fragment i is said to be active in every column j that lies in between its leftmost nonhole entry and its rightmost nonhole entry. Paired-end reads remain active in the ‘‘internal segment’’ between the two reads. Let F(j) be the set of fragments that are active at SNP position j and let F be the set of all fragments. The aim was to find a bipartition (R*, S*) of F such that the changes in R* and S* to make F conflict-free have minimum total weight
 
-![an image caption Source: Figure 4.](static/images/posts/Genomics/fig4.jpg)
+![an image caption Source: Figure 4.](C:/Users/antho/Documents/personal_website/static/images/posts/Genomics/fig4.jpg)
 
 #### Further Sequencing 
 So how well does Whatshap perform? Compared to other applications we have seen promising performance from Whatshap that yields provably optimal solutions to the weighted minimum error correction problem in runtime linear in the number of SNPs. WhatsHap could handle datasets of coverage up to 20x, and that 15x are generally enough for reliably phasing long reads, even at significantly elevated sequencing error rates. We also find that the switch and flip error rates of the haplotypes we output are favorable when comparing them with state-of-the-art statistical phasers.
