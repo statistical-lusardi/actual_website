@@ -13,7 +13,7 @@ section:
 skills:
 - name: R
   icon: "/images/sections/skills/R.png"
-  summary: "3 years of experience applying statistical methods to organize, analyze, and interpret data"
+  summary: "5 years of experience applying statistical methods to organize, analyze, and interpret data"
   url: "https://www.r-project.org/"
 
 - name: Teaching
@@ -38,7 +38,7 @@ skills:
   url: "https://golang.org/"
 
 
-- name: Cloud Computing
-  icon: "/images/sections/skills/cloud.png"
-  summary: "Works with most of the major clouds such as Watson Studio, Azure etc."
+- name: Shiny
+  icon: "/images/sections/skills/shiny.png"
+  summary: "Develops Shiny Dashboards with interactive charts and functionality"
 
