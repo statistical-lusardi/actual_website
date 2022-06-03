@@ -18,14 +18,14 @@ company:
 resume: "files/resume_OSU_grad.pdf"
 
 # a summary about you
-summary: 'I am a passionate Data Analyst with 4 years of working experience. I built a machine learning algorithm for the restaurant industry to predict guests on any given day up to 10 weeks in advance with 83% accuracy . My algorithm helps restaurant managament make data-informed decisions to save on costs. Sometimes, I work on some fun projects such as using available search data to predict behavior.'
+summary: 'I am a Data Scientist and Statistician currentl with 6 years of working experience buidling data solutions for the various industries. I currently work in Renewable Energy with Bonneville Power Administration as an Operations Resarch Analyst in renewable energy.I have had experience working with various projects feel free to look at them! '
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
-  url: "lusardia@oregonstate.edu"
+  url: "anthonylsrd15@gmail.com"
 
 - name: Github
   icon: "fab fa-github"

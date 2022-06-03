@@ -11,6 +11,31 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Bonneville Power Administration.
+    url: "https://www.bpa.gov/"
+    location: Portland, Oregon
+    # company overview
+    overview: BPA delivers reliable, affordable and carbon-free hydropower produced in the Columbia River Basin to communities across the Northwest. 
+  positions:
+  - designation: Grid Modernization Operation Research Analyst
+    start: Jun 2021
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Assisted, an undergraduate course averaging 60 students per term 
+    - Taught methods of obtaining and statistically sound evidence to answer questions of research
+    - Developed quizzes, labs and homework
+
+  - designation: Statistical Consultant
+    start: Jan 2019
+    end: Mar 2019
+    responsibilities:
+    - Produce and Maintain Valuation of projects present findings to stakeholders
+    - Build and Maintain Shiny Dashboard report to summarize weekly operations 
+    - Construct modelling techniques to optimize hydro operations for Banks Lake
+
+- company:
     name: Oregon State University.
     url: "https://stat.oregonstate.edu/"
     location: Corvallis, Oregon
@@ -19,7 +44,7 @@ experiences:
   positions:
   - designation: Graduate Teaching Assistant
     start: Sep 2020
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: Mar 2021
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:

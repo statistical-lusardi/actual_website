@@ -6,13 +6,12 @@ greeting: "Hi, I am"
 image: "images/author/linkedin.jpg"
 # give your some contact information. they will be used in the footer
 contactInfo:
-  email: "lusardia@oregonstate.edu"
+  email: "anthonylsrd15@gmail.com"
   phone: "+0123456789"
 
 # some summary about what you do
 summary:
   - I am a Statistician
-  - I am a Student
+  - I am a Grid Modernization Analyst
   - I love new challenges
-  - I work on machine learning projects
   - I love to improve diversity of ideas in Academia
