@@ -1,0 +1,49 @@
+---
+title: Predicting Restaurant Guests with Prophet
+author: Anthony Lusardi
+date: '2022-06-03'
+slug: []
+categories:
+  - R
+tags: []
+hero: images/posts/Restaurant/ML.png
+---
+
+
+
+<p>As a Graduate Student in Statistics at Oregon State University, I had taken it upon myself to find an low-cost way by means of a machine learning algorithm with a desire to produce accurate predictions for dinner guest counts on given night for a local restaurant in Corvallis Oregon using actual, historical restaurant data.</p>
+<p>The burning question on any restaurant management team is this because from it, helps run their store efficiently:</p>
+<p>“How many people do you think are coming in tonight?” - Do you think we should really have this many people on staff?</p>
+<p>Without a doubt, knowing an accurate amount of clientele on a given shift is the most important information to both wait staff and managerial staff.</p>
+<p>Unfortunately, a question like this is based on manual prediction strategies that is more aligned with an “educated speculation” performed 30 days in advance. This important piece of data is input to many subsequent decisions for food inventory, staffing, etc.</p>
+<p>As a result, incorrect speculations can result in under or over-staffing, inadequate food preparations, and/or extended wait times for customers.</p>
+<p><em>Cost of Staffing and Prediction</em></p>
+<p>According to the National Restaurant Association, restaurant wages range from $8 an hour for dishwashers to around $20/hour for bartenders. However, a chef can earn roughly $12/hour, while server staff earns about $16/hour.</p>
+<p>An average cost of hiring an hourly restaurant employee can be as much as $3,500. Thus, restauranteurs spend over 50% of their monthly budget on the staffing costs.</p>
+<p>To mitigate risk with better estimations, the business owner could utilize an costly Point of Service (POS) interface that tracks peak times in order to gain more insight on customer behavior. Between “educated speculation” vs. using expensive technologies it would seem that there would be no middle ground to gain valuable insight into answering this valuable question stated earlier .</p>
+<p>The Solution</p>
+<p>Instead of using educated speculations, I postulated that by using machine learning to perform the number crunching it would remove the variability of different managers’ estimation techniques and provide a continual learning pattern as well.</p>
+<p>How does it work?</p>
+<p>This decomposable time series model (Harvey &amp; Peters 1990) contains three main model components: trend, seasonality, and holidays in the following form.</p>
+<p>No alt text provided for this image
+Here g(t) is the trend function which models non-periodic changes in the value of the time series, s(t) represents periodic changes (e.g., weekly and yearly seasonality), and h(t) represents the effects of holidays which occur on potentially irregular schedules over one or more days. The error term(t) represents any idiosyncratic changes which are not accommodated by the model; later we will make the parametric assumption that (t) is normally distributed</p>
+<p>Unlike an Autoregressive integrated moving average (ARIMA) model that depends upon regularly spaced data, this model performs very well in the face of missing values or extreme outliers. Because of this, there is no need to interpolate missing values e.g. from removing outliers</p>
+<p>However, one of the most prominent strengths of this Generalized Additive Model (GAM) is the ability to work especially well with holidays, and seasonal effects. These factors have an extremely large influence on drastic changepoints in guest counts and have strong influences in guest behavior.</p>
+<p>Putting the Model to the Test</p>
+<p>The testing team, consisting of restaurant management and myself, decided to test the algorithm in October 2019 to predict two months in advance for November 2019 and December 2019. The General Manager (GM) daily predictions were given in advance for dinner guest counts and the model was set to predict for the same amount of time without the knowledge of GM predictions. This model was only constructed using the prophet algorithm with the previous years’ guest counts as input.</p>
+<p>Results</p>
+<p>The results of the model’s execution were better than anticipated, not only did the algorithm match the GM’s guest predictions, it outperformed was actually closer to the actual counts with a small sample of data. The algorithm that can predict on average 82% of all daily guests on any given night.</p>
+<p>After compiling actual daily guest counts and evaluating the Mean absolute percentage error or MAPE for each day we compared them the GM predictions and the model’s predictions. The results show that for these two months, the algorithm had an average accuracy of 76% and missing a total of 2789 guests over the course of the 60-day estimation period while the GM’s predictions had an accuracy of 74% missing a total of 3060 guests over the same time frame.</p>
+<p>No alt text provided for this image
+Applicable Results</p>
+<p>The test team asserted that if the restaurant had implemented algorithm’s predictions over the course of the two months it would have saved 6% on labor costs per month vs. the GM’s initial estimates.</p>
+<p>How much money is saved?</p>
+<p>Based on these projections the test team asserts that on average, the GM’s estimates was off +/-18.5 guests. Using a staffing tool in the example below results show an average loss $153.38 per shift.</p>
+<p>No alt text provided for this image
+As a result of a non-optimal estimation, these losses add up quickly and over the course of a month, an average of $8,600 is lost on unused labor or $103k per year!</p>
+<p>How much money can be saved?</p>
+<p>By extrapolating the linear cost savings of a better estimation method, (assuming that the model was consistently accurate by the same margin, over time) and presuming that the manager relied on the machine learning predictions for the restaurant with 5.9% increase in guest prediction accuracy (an average of 12.6 guests over or under). With this information, the restaurant could have saved $122 per shift, resulting in a $3,681 savings in one month and $44,172 in the first 12 months.</p>
+<p>Discussion and further research</p>
+<p>This algorithm is still under development and we are constantly looking to improve it by adding data such as weather conditions, local events, and other features that would improve the model. We found that the current predictions that are based on weekly and yearly seasonality do indeed reflect some of the highest features to give accurate predictions. In addition, yearly events that are reoccurring or athletic events also increase the accuracy of these predictions. This could be better achieving by gathering calendar data and adding it into the holiday effect regressor for improved accuracy.</p>
+<p>Bibliography</p>
+<p>Holmberg, M., &amp; Halldén, P. (2018). Abstract Machine Learning for Restaurant Sales Forecast.</p>
