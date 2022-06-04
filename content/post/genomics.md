@@ -6,7 +6,7 @@ hero: /images/posts/Genomics/DNA.jpg
 theme: Toha
 menu:
   sidebar:
-    name: Genomics
-    identifier: genomics
+    name: Projects
+    identifier: projects
     weight: 500
 ---
