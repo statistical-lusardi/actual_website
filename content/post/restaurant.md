@@ -6,7 +6,7 @@ hero: /images/posts/Restaurant/ML.png
 theme: Toha
 menu:
   sidebar:
-    name: Projects
-    identifier: projects
+    name: Restaurant Predictions
+    identifier: restaurant
     weight: 500
 ---
