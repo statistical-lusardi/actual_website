@@ -1,0 +1,13 @@
+---
+title: 'Shiny application: Pricing Transformers Based on Historical Sales'
+author: Anthony Lusardi
+date: '2022-06-03'
+slug: []
+categories:
+  - R
+tags:
+  - regression
+hero: images/sections/skills/shiny.png
+---
+### Coming Soon
+
