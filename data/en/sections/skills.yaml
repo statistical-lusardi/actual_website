@@ -33,7 +33,7 @@ skills:
   url: "https://github.com/statistical-lusardi"
 
 - name: Hugo Website Development
-  icon: "/images/sections/skills/hugo.png"
+  icon: "/images/sections/skills/h.png"
   summary: "Capable of writing scalable, testable, and maintainable program."
   url: "https://golang.org/"
 

@@ -21,14 +21,21 @@ buttons:
 
 # your projects
 projects:
-# - name: Kubernetes
-#   logo: /images/sections/projects/kubernetes.png
-#   role: Contributor
-#   timeline: "March 2018 - Present"
-#   repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-#   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-#   summary: Production-Grade Container Scheduling and Management.
-#   tags: ["professional", "kubernetes", "cloud"]
+ # - name: Predicting Restaurant Guests with Google Searchs
+ #   logo: /images/sections/projects/google_rest.png
+ #   role: Author
+ #   timeline: "Sep 2020 - Dec 2020"
+ #   repo: https://github.com/ST541-Fall2020/statistical-lusardi-project-google-searches # If your project is a public repo on GitHub, then provide this link. it will show star count.
+ #   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+ #   summary: This project is to uses available data collected on google searches for a restaurant title to then generate a linear regression model to predict the average amount of guests expected to come in on a given day.
+ #   tags: ["professional", "kubernetes", "cloud"]
+- name: Predicting Restaurant Guests with Google Searchs
+  logo: /images/sections/projects/google_rest.png
+  role: Author
+  timeline: "Sep 2020 - Dec 2020"
+  repo: "https://github.com/ST541-Fall2020/statistical-lusardi-project-google-searches"
+  summary: This project is to uses available data collected on google searches for a restaurant title to then generate a linear regression model to predict the average amount of guests expected to come in on a given day.
+  tags: ["academic","professional"]
 
 # - name: Tensorflow
 #   logo: /images/sections/projects/tensorflow.png
@@ -39,7 +46,8 @@ projects:
 #   summary: An Open Source Machine Learning Framework for Everyone.
 #   tags: ["professional", "machine-learning","academic"]
 
-- name: A sample academic paper
+- name: Genetic Reconstruction Graduate Coursework
+  logo: /images/sections/projects/DNA.jpg
   role: Statistical Consultant
   timeline: "Jan 2021-March 2021"
   url: "https://www.linkedin.com/pulse/statistics-genetic-research-solving-natures-largest-jigsaw-lusardi/?published=t&trackingId=9%2BaHCbQjSbSuQa2yVm%2BkNA%3D%3D"

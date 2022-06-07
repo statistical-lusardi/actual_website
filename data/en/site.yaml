@@ -7,5 +7,7 @@ description: Portfolio and personal blog of Anthony Lusardi.
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
 customMenus:
-- name: Docs
-  url: https://toha-guides.netlify.app/posts/
+- name: Contact
+  url: https://forms.gle/ZQteiJNS1vd46BQd9
+  hideFromNavbar: false
+  showOnFooter: false

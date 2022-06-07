@@ -18,7 +18,7 @@ company:
 resume: "files/resume_OSU_grad.pdf"
 
 # a summary about you
-summary: 'I am Statistician with 6 years of working experience buidling data solutions for various industries. I currently work in Renewable Energy with Bonneville Power Administration as an Operations Resarch Analyst in renewable energy and grid modernization.I have had experience working with various projects across various industries and some just for fun. Feel free to look at them!'
+summary: 'I am statistician with 6 years of working experience building data solutions for various industries. I currently work in renewable energy with Bonneville Power Administration as an Operations Resarch Analyst in renewable energy and grid modernization where I help provide operational information to assist the Pacific Northwest electric grid acheive carbon-free and renewable solutions.  I have had experience working with various projects across various industries and some just for fun.  Need a data expert for your business? Click the icons to connect. Or visit the contact page for more information on consulting and training services.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -50,7 +50,7 @@ softSkills:
 - name: Problem Solving
   percentage: 85
   color: blue
-- name: Team Work
+- name: Teaching
   percentage: 90
   color: yellow
 - name: Communication
