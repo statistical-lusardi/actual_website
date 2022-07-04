@@ -54,14 +54,12 @@ projects:
   summary: Ever wondered why Statistics and Genetics are related? Here's a chance to find out!  Prepare for an overview of a biological wonder and math intensive project to solve natures largest puzzle
   tags: ["academic","iot"]
 
-# - name: Nocode
-#   logo: /images/sections/projects/no-code.png
-#   role: Nothing
-#   timeline: "Oct 2019 - Dec 2019"
-#   repo: https://github.com/kelseyhightower/nocode
-#   #url: ""
-#   summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-#   tags: ["hobby", "fun"]
+- name: Beer Brewing
+  logo: /images/sections/projects/beer.png
+  role: Brewer
+  timeline: "June 2022 - July 2022"
+  summary: Summer is here and its time to brew beer!
+  tags: ["hobby", "fun"]
 
 # - name: Toha
 #   logo: /images/sections/projects/toha.png
