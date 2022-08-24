@@ -8,6 +8,6 @@ description: Portfolio and personal blog of Anthony Lusardi.
 # they will be separated by a divider from the main menus.
 customMenus:
 - name: Contact
-  url: https://forms.gle/ZQteiJNS1vd46BQd9
+  url: https://www.fiverr.com/estatisticas/be-your-guide-towards-finding-a-data-driven-solution-that-works-for-you
   hideFromNavbar: false
   showOnFooter: false
