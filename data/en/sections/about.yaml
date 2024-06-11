@@ -8,7 +8,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Grid Modernization Research Analyst M.S. Statistics
+designation: Mathematical Statistician M.S. Statistics
 # your company information
 company:
   name: Bonneville Power Administration
@@ -36,9 +36,9 @@ socialLinks:
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/anthony-lusardi/"
 
-- name: Twitter
-  icon: "fab fa-twitter"
-  url: "https://twitter.com/itsthat1italian"
+# - name: Twitter
+#   icon: "fab fa-twitter"
+#   url: "https://twitter.com/itsthat1italian"
 
 - name: Facebook
   icon: "fab fa-facebook"

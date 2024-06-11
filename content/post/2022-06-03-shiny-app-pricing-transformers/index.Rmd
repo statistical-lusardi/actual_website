@@ -6,8 +6,14 @@ slug: []
 categories:
   - R
 tags:
-  - regression
+  - Shiny
+  - Web
 hero: images/sections/skills/shiny.png
+output:
+  blogdown::html_page:
+    toc: false
+# draft: true
+runtime: shiny
 ---
-### Coming Soon
 
+<iframe height="800" width="100%" frameborder="no" src="https://rxq08h-anthony-lusardi.shinyapps.io/Shiny_Price/"> </iframe>

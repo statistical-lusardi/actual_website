@@ -27,7 +27,15 @@ I had followed the all grain recipe for a classic summmer hazy IPA to a tee (inc
 
 ###
 
-It was only too late that I had realized my mistake. I was supposed to heat the mash water 10 degrees hotter than what the recipe calls for in order to account for the temperature drop with the introduction of the grains to the mash. This mistake will not ruin the beer but it could result in less starches being extracted during the process and inturn less sugar and less ABV%.
+It was only too late that I had realized my mistake. I was supposed to heat the mash water 10 degrees hotter than what the recipe calls for in order to account for the temperature drop with the introduction of the grains to the mash. This mistake will not ruin the beer but it could result in less starches being extracted during the process and in turn less sugar and less ABV%.
+
+
+### 
+
+#### July 9th 2022
+
+After 
+
 
 {{< vs 8>}} 
 ### Recipe for the Bootstrap Brew
