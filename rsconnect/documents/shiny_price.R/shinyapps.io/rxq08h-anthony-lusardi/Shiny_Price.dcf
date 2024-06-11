@@ -1,0 +1,14 @@
+name: Shiny_Price
+title: Shiny_Price
+username:
+account: rxq08h-anthony-lusardi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6457435
+bundleId: 5991289
+url: https://rxq08h-anthony-lusardi.shinyapps.io/Shiny_Price/
+when: 1654744033.45152
+lastSyncTime: 1654744033.45152
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .github/workflows/azure-static-web-apps-victorious-ocean-0650c0b1e.yml|.hugo_build.lock|config.toml|config.yaml|debug.log|deploy.sh|hugo.exe|index.html|index.Rmd|layouts/shortcodes/blogdown/postref.html|LICENSE|README.md|content|data|public|themes

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Statistical Lusardi&#39;s Homepage</title>
+    <link>https://eager-swirles-c92696.netlify.app/categories/r/</link>
+    <description>Recent content in R on Statistical Lusardi&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://eager-swirles-c92696.netlify.app/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Predicting Restaurant Guests with Prophet</title>
+      <link>https://eager-swirles-c92696.netlify.app/post/2022-06-03-prediction-restaurant-guests-with-prophet/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://eager-swirles-c92696.netlify.app/post/2022-06-03-prediction-restaurant-guests-with-prophet/</guid>
+      <description>As a Graduate Student in Statistics at Oregon State University, I had taken it upon myself to find an low-cost way by means of a machine learning algorithm with a desire to produce accurate predictions for dinner guest counts on given night for a local restaurant in Corvallis Oregon using actual, historical restaurant data.
+The burning question on any restaurant management team is this because from it, helps run their store efficiently:</description>
+    </item>
+    
+    <item>
+      <title>Shiny application: Pricing Transformers Based on Historical Sales</title>
+      <link>https://eager-swirles-c92696.netlify.app/post/2022-06-03-shiny-app-pricing-transformers/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://eager-swirles-c92696.netlify.app/post/2022-06-03-shiny-app-pricing-transformers/</guid>
+      <description>Coming Soon</description>
+    </item>
+    
+  </channel>
+</rss>

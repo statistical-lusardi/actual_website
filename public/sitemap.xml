@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://eager-swirles-c92696.netlify.app/categories/</loc>
+    <lastmod>2022-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eager-swirles-c92696.netlify.app/post/</loc>
+    <lastmod>2022-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eager-swirles-c92696.netlify.app/post/2022-06-03-prediction-restaurant-guests-with-prophet/</loc>
+    <lastmod>2022-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eager-swirles-c92696.netlify.app/categories/r/</loc>
+    <lastmod>2022-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eager-swirles-c92696.netlify.app/tags/regression/</loc>
+    <lastmod>2022-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eager-swirles-c92696.netlify.app/post/2022-06-03-shiny-app-pricing-transformers/</loc>
+    <lastmod>2022-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eager-swirles-c92696.netlify.app/</loc>
+    <lastmod>2022-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eager-swirles-c92696.netlify.app/tags/</loc>
+    <lastmod>2022-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eager-swirles-c92696.netlify.app/post/2021-03-26-the-power-of-statistics-in-genomics/</loc>
+    <lastmod>2021-03-26T00:00:00+00:00</lastmod>
+  </url>
+</urlset>

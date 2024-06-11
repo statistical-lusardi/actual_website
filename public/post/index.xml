@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Statistical Lusardi&#39;s Homepage</title>
+    <link>https://eager-swirles-c92696.netlify.app/post/</link>
+    <description>Recent content in Posts on Statistical Lusardi&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://eager-swirles-c92696.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Predicting Restaurant Guests with Prophet</title>
+      <link>https://eager-swirles-c92696.netlify.app/post/2022-06-03-prediction-restaurant-guests-with-prophet/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://eager-swirles-c92696.netlify.app/post/2022-06-03-prediction-restaurant-guests-with-prophet/</guid>
+      <description>As a Graduate Student in Statistics at Oregon State University, I had taken it upon myself to find an low-cost way by means of a machine learning algorithm with a desire to produce accurate predictions for dinner guest counts on given night for a local restaurant in Corvallis Oregon using actual, historical restaurant data.
+The burning question on any restaurant management team is this because from it, helps run their store efficiently:</description>
+    </item>
+    
+    <item>
+      <title>Shiny application: Pricing Transformers Based on Historical Sales</title>
+      <link>https://eager-swirles-c92696.netlify.app/post/2022-06-03-shiny-app-pricing-transformers/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://eager-swirles-c92696.netlify.app/post/2022-06-03-shiny-app-pricing-transformers/</guid>
+      <description>Coming Soon</description>
+    </item>
+    
+    <item>
+      <title>The Power of Statistics in Genomics</title>
+      <link>https://eager-swirles-c92696.netlify.app/post/2021-03-26-the-power-of-statistics-in-genomics/</link>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://eager-swirles-c92696.netlify.app/post/2021-03-26-the-power-of-statistics-in-genomics/</guid>
+      <description>If genetics is not in your field of experience, as a newcomer it feels a lot like being given a jigsaw puzzle with exactly 2,697,890,418 pieces with no reference picture. Your task is to find out how to put it together exactly. But it doesn’t stop there - Let’s say you want to find 5 pieces that have the same pattern in a different puzzle and that 2-billion-piece puzzle is partially put together in fragments.</description>
+    </item>
+    
+  </channel>
+</rss>
