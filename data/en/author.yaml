@@ -5,13 +5,13 @@ nickname: "Anthony"
 greeting: "Hi, I am"
 image: "images/author/linkedin.jpg"
 # give your some contact information. they will be used in the footer
-contactInfo:
-  email: "anthonylsrd15@gmail.com"
-  phone: "(541)-360-8573"
+#contactInfo:
+ # email: "anthonylsrd15@gmail.com"
+#  phone: "(541)-360-8573"
 
 # some summary about what you do
 summary:
-  - I'm a Statistician
-  - I'm a Data Scientist
-  - I love new challenges
-  - I want to help you make a difference using data-driven solutions
+  - Let’s Solve Complex Problems Together
+  - Driving Data Solutions for the Energy Sector
+  - Transforming Data into Actionable Insights
+  - Helping Businesses Optimize Operations through Data Science
