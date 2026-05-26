@@ -1,5 +1,5 @@
 # Copyright Notice
-copyright: © 2022 Copyright Anthony Lusardi.
+copyright: © 2026 Copyright Anthony Lusardi.
 
 # Meta description for your site.  This will help the search engines to find your site.
 description: Portfolio and personal blog of Anthony Lusardi.
@@ -9,5 +9,5 @@ description: Portfolio and personal blog of Anthony Lusardi.
 customMenus:
 - name: Contact
   url: https://www.fiverr.com/estatisticas/be-your-guide-towards-finding-a-data-driven-solution-that-works-for-you
-  hideFromNavbar: false
-  showOnFooter: false
+  hideFromNavbar: true
+  showOnFooter: true

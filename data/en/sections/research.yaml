@@ -1,0 +1,29 @@
+# section information
+section:
+  name: Research Contributions
+  id: research
+  enable: true
+  weight: 4
+  showOnNavbar: true
+
+research:
+
+- title: Computational Linguistics and NLP Research Collaborations
+  timeline: "2023 - Present"
+
+  summary: >
+    Collaborated on multiple doctoral research projects at Oregon State University
+    involving large-scale Reddit corpus construction, computational text analysis,
+    topic modeling, sentiment analysis, and statistical workflows in R.
+
+  contributions:
+    - Developed web scraping workflows for large-scale corpus collection from Reddit
+    - Assisted with statistical analysis design and interpretation
+    - Applied topic modeling (LDA), collocation analysis, and sentiment analysis techniques
+    - Supported reproducible analytical workflows for dissertation research projects
+
+  papers:
+    - "Corpus-Based Studies on Higher Education and Student Affairs Counseling (2025)"
+    - "A Corpus Linguistic Analysis of K–12 Educator Blogging on AI (2025)"
+    - "Corpus-Based Studies on Mental Health (2025)"
+    - "Psychedelics as an Emerging Therapeutic Praxis: A Corpus-Based Perspective (2025)"

@@ -5,80 +5,65 @@ section:
   enable: true
   weight: 3
   showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true 
 
 # Your experiences
 experiences:
-- company:
-    name: Independent Consulting.
-    url: "https://www.statisticallusardi.com"
-    location: Corvallis, OR
-    overview: A history of relevant consulting jobs for local companies.
-  positions:
-  - designation: Independent Consultant
-    start: Sep 2016
-    end: Present
-    responsibilities:
-    - L & M Industrial Fabrication - Aided to optimize trucking costs for deliveries
-    - Maddox Transformers - Created a pricing tool utilizing historical data to optimize online product price setting
-    - Agronomic Research OSU - Aided with statistical interpretation of results and significance for fungicide research on hazelnut trees
-
 
 - company:
-    name: Bonneville Power Administration.
+    name: Bonneville Power Administration
     url: "https://www.bpa.gov/"
     location: Portland, Oregon
-    # company overview
-    overview: BPA delivers reliable, affordable and carbon-free hydropower produced in the Columbia River Basin to communities across the Northwest. 
+    overview: BPA delivers reliable, affordable, and carbon-free hydropower throughout the Pacific Northwest.
+
   positions:
-  - designation: Grid Modernization Operation Research Analyst
+  - designation: Operations Research Analyst – Energy Forecasting and Analytics
     start: Jun 2021
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
+
     responsibilities:
-    - Produce and Maintain Valuation of projects present findings to stakeholders
-    - Build and Maintain Shiny Dashboard report to summarize weekly operations 
-    - Construct modelling techniques to optimize hydro operations for Banks Lake
+    - Support operational forecasting and analytics workflows for utility and grid operations within the Pacific Northwest energy system
+    - Develop and maintain reporting and visualization tools using R, Shiny, SQL, and Python for operational decision support
+    - Build automated analytical workflows for forecasting, reporting, and data validation processes
+    - Analyze time-series and operational data to improve situational awareness and support system planning activities
+    - Communicate analytical findings and technical results to operational and business stakeholders
+
 
 - company:
-    name: Oregon State University.
+    name: Independent Statistical Consulting
+    url: "https://www.statisticallusardi.com"
+    location: Oregon
+    overview: Select analytical and statistical consulting engagements across industrial, agricultural, and operational domains.
+
+  positions:
+  - designation: Statistical Consultant
+    start: Sep 2016
+    end: Present
+
+    responsibilities:
+    - Assisted industrial and manufacturing clients with operational and pricing analytics using historical business data
+    - Supported agricultural research projects through statistical analysis and interpretation of experimental results
+    - Provided guidance on experimental design, statistical methodology, and applied data analysis
+
+
+- company:
+    name: Oregon State University
     url: "https://stat.oregonstate.edu/"
     location: Corvallis, Oregon
-    # company overview
-    overview: Oregon State University is a public land-grant research university in Corvallis, Oregon.  
+    overview: Public research university specializing in engineering, agriculture, and applied sciences.
+
   positions:
   - designation: Graduate Teaching Assistant
     start: Sep 2020
     end: Mar 2021
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
+
     responsibilities:
-    - Assisted, an undergraduate course averaging 60 students per term 
-    - Taught methods of obtaining and statistically sound evidence to answer questions of research
-    - Developed quizzes, labs and homework
+    - Assisted instruction for undergraduate statistics courses serving approximately 60 students per term
+    - Taught statistical reasoning, experimental design, and research methodology concepts
+    - Developed instructional materials including labs, quizzes, and coursework exercises
 
   - designation: Statistical Consultant
     start: Jan 2019
     end: Mar 2019
-    responsibilities:
-    - Consulted on experimental design in the Departments of Agriculture and Social Sciences and summarize findings
-    - Tasked to determine the appropriate statistical tool to use in data analyses for time-series and longitudinal data analyses 
 
-
-    
-- company:
-    name: The Old Spaghetti Factory.
-    url: "https://www.osf.com/"
-    location: Corvallis, OR
-    overview: OSF served as a gateway experience to enter into the Graduate program at Oregon State.
-  positions:
-  - designation: Data Consultant
-    start: Sep 2016
-    end: Oct 2020
     responsibilities:
-    - Providing managers valuable data-driven insight using check averages for increasing weekly sales per year for each store. 
-    - Redesigned company’s national training methods for new employees based on improvements found in said analysis
-    - Created a mobile app to calculate maximum profit for server’s income for new servers. 
-  
+    - Consulted on experimental design and statistical methodology for research projects across agriculture and social sciences
+    - Supported applied analyses involving longitudinal and time-series data

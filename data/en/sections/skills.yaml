@@ -5,40 +5,37 @@ section:
   enable: true
   weight: 5
   showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
 
-# Your Skills.
-# Give a summary of you each skill in the summary section.
+# Your Skills
 skills:
+
 - name: R
   icon: "/images/sections/skills/R.png"
-  summary: "5 years of experience applying statistical methods to organize, analyze, and interpret data"
+  summary: "Extensive experience developing statistical models, forecasting workflows, automation pipelines, and analytical tools using R and the tidyverse ecosystem."
   url: "https://www.r-project.org/"
-
-- name: Teaching
-  icon: "/images/sections/skills/beaver.png"
-  summary: "Univeristy teaching experience for statisics undergraduate classes while pursuing M.S. in statistics."
-  url: "https://stat.oregonstate.edu/people"
-
-
-- name: Power BI
-  icon: "/images/sections/skills/powerbi.png"
-  summary: "Manage, monitor and improve integrated guest monitoring visualizations and dashboard environments including ongoing changes"
-  url: "https://app.powerbi.com/view?r=eyJrIjoiNjI2NDI5ZWQtY2RlMC00ZGFjLWE1N2QtMTYxYWVkOTQyZjc5IiwidCI6ImNlNmQwNWUxLTNjNWUtNGQ2Mi04N2E4LTRjNGEyNzEzYzExMyIsImMiOjZ9&pageName=ReportSectionff2514f78c9f7317f259"
-
-- name: Git
-  icon: "/images/sections/skills/git.png"
-  summary: "Experienced with website development, version control, and multiple team-based projects"
-  url: "https://github.com/statistical-lusardi"
-
-- name: Hugo Website Development
-  icon: "/images/sections/skills/h.png"
-  summary: "Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
-
 
 - name: Shiny
   icon: "/images/sections/skills/shiny.png"
-  summary: "Develops Shiny Dashboards with interactive charts and functionality"
+  summary: "Develops interactive Shiny dashboards and operational reporting tools for visualization, forecasting, and decision-support workflows."
+  url: "https://shiny.posit.co/"
+
+- name: Python
+  icon: "/images/sections/skills/python.png"
+  summary: "Experience building analytical workflows, automation scripts, forecasting models, and data-processing tools using Python."
+  url: "https://www.python.org/"
+
+- name: SQL
+  icon: "/images/sections/skills/sql.png"
+  summary: "Experience querying, transforming, and validating operational and time-series data within relational database environments."
+  url: "https://en.wikipedia.org/wiki/SQL"
+
+- name: Forecasting & Time-Series Analysis
+  icon: "/images/sections/skills/chart.png"
+  summary: "Experience developing and analyzing operational forecasting workflows using statistical modeling and time-series analytical techniques."
+  url: "https://en.wikipedia.org/wiki/Time_series"
+
+- name: Git
+  icon: "/images/sections/skills/git.png"
+  summary: "Uses Git and GitHub for version control, collaboration, and management of analytical and software development projects."
+  url: "https://github.com/statistical-lusardi"
 
